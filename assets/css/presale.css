@@ -1,0 +1,17 @@
+input {
+  text-align: center;
+  font-size: 18px;
+  background-color: #ffffff;
+
+  color: #000000;
+  border: 1px solid;
+  max-width : 25%;
+  border-radius: 25px;
+}
+
+
+hr {
+    margin: 20px;
+    border: 0;
+    border-top: 1px dashed;
+}
