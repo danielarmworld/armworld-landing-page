@@ -5,14 +5,6 @@ button.addEventListener("click",function(e){
   DePayWidgets.Payment({
     accept: [
       { blockchain: 'bsc', token: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', amount, receiver }
-    ],
-    currency: 'USD',
-    event: 'ifSwapped',
-    confirmed: (transaction)=>{
-      // do something once the payment has been confirmed
-    },
-    critical: (error)=> {
-      alert(`The following error occured: ${error.toString()}`)
-    }
+    ]
   });
 });
