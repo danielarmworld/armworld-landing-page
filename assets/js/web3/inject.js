@@ -400,12 +400,12 @@ window.addEventListener('load', async function () {
   )
 
   let balanceArm = await instance.methods
-    .balanceOf('0x81a408c18a404aaa99910917486a9e12090efb2a')
+    .balanceOf('0x1c24fc9b33a4bba4207ded54bbba96997f6584ab')
     .call()
   balanceArm /= 1000000000
 
   let balanceArm2 = await instance.methods
-    .balanceOf('0x3a5d458019f356149e7bf305d86d6c09c3d362cd')
+    .balanceOf('0x88e3bad9712121d49198c509e45532efc79199d1')
     .call()
   balanceArm2 /= 1000000000
 
@@ -415,7 +415,7 @@ window.addEventListener('load', async function () {
   balanceArm3 /= 1000000000
 
   let balanceArm4 = await instance.methods
-    .balanceOf('0x5781643458441f6f818809214f91c25b1f5d147b')
+    .balanceOf('0xbfad091cd6fbf8116fc91257cbcb4544de8f3205')
     .call()
   balanceArm4 /= 1000000000
 
