@@ -422,12 +422,12 @@ window.addEventListener('load', async function () {
   let totalBalance =
     balanceArm + balanceArm2 + balanceArm3 + balanceArm4
 
-  let intSold = abbreviateNumber((20400000 - totalBalance).toFixed(2))
+  let intSold = abbreviateNumber((30000000 - totalBalance).toFixed(2))
 
 
   let width1 = document.getElementById('token-sold1')
 
-  let value = (((20400000 - totalBalance) / 20400000) * 100).toFixed(1)
+  let value = (((30000000 - totalBalance) / 30000000) * 100).toFixed(1)
   width1.style['width'] = `${parseInt(value)}%`
 
 
@@ -442,7 +442,7 @@ window.addEventListener('load', async function () {
   let percentage = document.getElementById('percentage-sold')
 
 
-  percentage.innerHTML = ` ${(20400000 - totalBalance).toFixed(
+  percentage.innerHTML = ` ${(30000000 - totalBalance).toFixed(
     2,
   )} ARMWORLD (${value}%) `
 })
