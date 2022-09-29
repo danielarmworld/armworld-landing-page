@@ -400,34 +400,34 @@ window.addEventListener('load', async function () {
   )
 
   let balanceArm = await instance.methods
-    .balanceOf('0x1c24fc9b33a4bba4207ded54bbba96997f6584ab')
+    .balanceOf('0x03fea254cfa7434004e8d495725bcbb7ccc40454')
     .call()
   balanceArm /= 1000000000
 
   let balanceArm2 = await instance.methods
-    .balanceOf('0x88e3bad9712121d49198c509e45532efc79199d1')
+    .balanceOf('0x1c24fc9b33a4bba4207ded54bbba96997f6584ab')
     .call()
   balanceArm2 /= 1000000000
 
   let balanceArm3 = await instance.methods
-    .balanceOf('0xce58af1f9453a4c2d620feda17e1c621cb94b602')
+    .balanceOf('0xbfad091cd6fbf8116fc91257cbcb4544de8f3205')
     .call()
   balanceArm3 /= 1000000000
 
   let balanceArm4 = await instance.methods
-    .balanceOf('0xbfad091cd6fbf8116fc91257cbcb4544de8f3205')
+    .balanceOf('0x88e3bad9712121d49198c509e45532efc79199d1')
     .call()
   balanceArm4 /= 1000000000
 
   let totalBalance =
     balanceArm + balanceArm2 + balanceArm3 + balanceArm4
 
-  let intSold = abbreviateNumber((30000000 - totalBalance).toFixed(2))
+  let intSold = abbreviateNumber((20643953.8582207 - totalBalance).toFixed(2))
 
 
   let width1 = document.getElementById('token-sold1')
 
-  let value = (((30000000 - totalBalance) / 30000000) * 100).toFixed(1)
+  let value = (((20643953.8582207 - totalBalance) / 20643953.8582207) * 100).toFixed(1)
   width1.style['width'] = `${parseInt(value)}%`
 
 
@@ -442,7 +442,7 @@ window.addEventListener('load', async function () {
   let percentage = document.getElementById('percentage-sold')
 
 
-  percentage.innerHTML = ` ${(30000000 - totalBalance).toFixed(
+  percentage.innerHTML = ` ${(20643953.8582207 - totalBalance).toFixed(
     2,
   )} ARMWORLD (${value}%) `
 })
