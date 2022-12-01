@@ -828,6 +828,24 @@ button:focus {
   z-index: 2;
   transition: all 0.5s ease 0s;
 }
+
+.btn-second {
+  background-size: 200% auto;
+  background-image: -webkit-linear-gradient(
+    left,
+    #15c383 0%,
+    #ffcc67 51%,
+    #15c383
+  );
+  background-image: linear-gradient(to right, #15c383 0%, #ffcc67 51%, #15c383);
+  border: 0;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
+}
+
 .btn-default:hover {
   background-position: right center;
 }
